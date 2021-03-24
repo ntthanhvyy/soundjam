@@ -1,0 +1,101 @@
+/* GENERAL */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v13/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+body {
+    /* background: url("img/background-img.svg") fixed no-repeat center center cover, #2F303A;
+    Can't put a background svg over a background color */
+    background: #2F303A;
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Poppins';
+}
+
+main, header, footer {
+    padding: 2rem 7rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.display-flex {
+    display: flex;
+}
+
+/* HEADER */
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+    height: 10vh;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header .nav li {
+    border-bottom: 1px solid #2F303A;
+}
+
+header .nav li:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.nav li:first-child {
+    margin-right: 2rem;
+}
+/* MAIN */
+
+main {
+    height: 80vh;
+    background-image: url("../img/background-img.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main p:first-child{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+main p:nth-child(2) {
+    font-size: 1.5rem;
+    margin-bottom: 6rem;
+}
+
+main button {
+    background: #6C63FF;
+    font-size: 1.25rem;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+
+footer {
+    height: 10vh;
+    background-color: #202027;
+}
+
+footer {
+    justify-content: space-between;
+}
